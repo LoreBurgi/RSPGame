@@ -8,7 +8,7 @@
   "source": "src/index.html",
   "scripts": {
     "dev": "parcel",
-    "build": "parcel build --dist-dir build",
+    "build": "parcel build --dist-dir build --public-url /RSPGame",
     "deploy": "gh-pages -d build",
     "carpetas": "ls"
   },

@@ -5,6 +5,10 @@ import { initResultsPage } from "./pages/results";
 
 const routes = [
   {
+    path: /\/RSPGame/,
+    route: initWelcomePage,
+  },
+  {
     path: /\/welcome/,
     route: initWelcomePage,
   },
@@ -42,7 +46,7 @@ export function initRouter(container: Element) {
     }
   }
 
-  if (location.pathname == "/") {
+  if (location.pathname == "/RSPGame") {
     goTo("/welcome");
   } else {
     handleRoute(location.pathname);
